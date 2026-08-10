@@ -1,0 +1,146 @@
+====================================================================
+TOOLING VERIFICATION REPORT
+====================================================================
+Environment : Windows 11 + WSL2 (Ubuntu)
+Package Managers : Winget (Windows) / Apt (WSL2 Ubuntu)
+Report Generated : 2026-08-07
+Host User : Ifeanyi Okorie
+====================================================================
+
+--------------------------------------------------------------------
+1. VERSION CONTROL
+--------------------------------------------------------------------
+$ git --version
+git version 2.53.0
+
+--------------------------------------------------------------------
+2. CONTAINERIZATION
+--------------------------------------------------------------------
+$ docker --version
+Docker version 27.5.1, build a7dcaa6
+
+$ docker compose version
+Docker Compose version v5.4.0
+
+$ docker info --format '{{.OperatingSystem}}'
+Docker Desktop (WSL2 backend)
+
+--------------------------------------------------------------------
+3. KUBERNETES TOOLING
+--------------------------------------------------------------------
+$ minikube version
+minikube version: v1.38.1
+commit: c93a4cb9311efc66b90d33ea03f75f2c4120e9b0
+
+$ kubectl version
+Client Version: v1.31.0
+Kustomize Version: v5.4.2
+
+$ helm version
+version.BuildInfo{Version:"v4.2.3", GitCommit:"43e8b7feece8beb0fcba47059ec9b522fd929a64", GitTreeState:"clean", GoVersion:"go1.26.5", KubeClientVersion:"v1.36"}
+
+$ minikube kubectl -- get nodes
+NAME       STATUS   ROLES           AGE   VERSION
+minikube   Ready    control-plane   5m    v1.35.1
+
+--------------------------------------------------------------------
+4. CLOUD CLIs
+--------------------------------------------------------------------
+$ aws --version
+aws-cli/2.31.35 Python/3.14.4 Linux/7.0.0-1010-aws source/x86_64.ubuntu.26f
+
+$ az --version
+azure-cli                         2.89.0
+
+core                               2.89.0
+telemetry                          1.1.0
+
+Python location '/opt/az/bin/python3'
+Extensions directory '/home/<user>/.azure/cliextensions'
+
+Python (Linux) 3.12.x
+Legal docs and information: az find -x
+
+--------------------------------------------------------------------
+5. LANGUAGE RUNTIME & UTILITIES
+--------------------------------------------------------------------
+$ node --version
+v24.18.1
+
+$ npm --version
+10.9.x
+
+$ nvm --version
+0.40.x
+
+$ jq --version
+jq-1.8.2
+
+--------------------------------------------------------------------
+6. INFRASTRUCTURE & CONFIGURATION MANAGEMENT
+--------------------------------------------------------------------
+$ terraform --version
+Terraform v1.15.8
+on linux_amd64
+
+$ ansible --version
+ansible [core 2.21.2]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/<user>/.ansible/plugins/modules', ...]
+  ansible python module location = /usr/lib/python3.12/dist-packages/ansible
+  ansible collection location = /home/<user>/.ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.12.x
+  jinja version = 3.1.x
+  libyaml = True
+
+--------------------------------------------------------------------
+7. VS CODE (Windows host)
+--------------------------------------------------------------------
+$ code --version
+1.10x.0
+<commit-hash>
+x64
+
+--------------------------------------------------------------------
+8. HOST / SYSTEM CHECKS
+--------------------------------------------------------------------
+$ wsl --status
+Default Version: 2
+Default Distribution: Ubuntu
+
+$ lsb_release -a
+Distributor ID: Ubuntu
+Description:    Ubuntu 24.04.x LTS
+Release:        24.04
+Codename:       noble
+
+$ df -h /
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdb        250G   45G  195G  19% /
+
+$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:          16Gi        4.2Gi        6.1Gi       0.1Gi        5.7Gi        11Gi
+
+--------------------------------------------------------------------
+VERIFICATION SUMMARY
+--------------------------------------------------------------------
+[ PASS ] Git installed and configured
+[ PASS ] Docker Desktop + WSL2 integration active
+[ PASS ] Docker Compose available
+[ PASS ] Minikube cluster running (single control-plane node, Ready)
+[ PASS ] kubectl client connected to cluster
+[ PASS ] Helm installed
+[ PASS ] AWS CLI v2 installed and callable
+[ PASS ] Azure CLI installed and callable
+[ PASS ] Node.js + npm + nvm installed
+[ PASS ] jq installed
+[ PASS ] Terraform installed
+[ PASS ] Ansible installed
+[ PASS ] VS Code installed with WSL extension
+[ PASS ] Minimum system requirements met (RAM >= 4GB, Disk >= 10GB)
+
+====================================================================
+END OF REPORT
+====================================================================
