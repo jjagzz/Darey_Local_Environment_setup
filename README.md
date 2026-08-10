@@ -39,6 +39,15 @@ The split exists because Docker Desktop integrates with WSL2 as a backend (rathe
 - Connected Git to GitHub using SSH key authentication.
 - Installed **Visual Studio Code** via `winget install Microsoft.VisualStudioCode` on the Windows side, then added the **WSL extension** so VS Code can open and edit files directly inside the Ubuntu filesystem.
 
+VSCODE
+![](./screenshots/VScode%20installation.jpg)
+
+GIT
+![](./screenshots/git%20install%20verification.jpg)
+
+GITHUB
+![](./screenshots/GIThub%20setup.jpg)
+
 ### 3. AI-Assisted Tooling (Optional/Advanced)
 - Explored **GitHub Copilot** as a VS Code extension for AI-assisted code completion within the DevOps workflow.
 
@@ -57,6 +66,9 @@ The split exists because Docker Desktop integrates with WSL2 as a backend (rathe
 - Installed **Azure CLI** via the official Microsoft Apt repository script.
 - Installed **Node.js** (LTS) via `nvm` (Node Version Manager) inside WSL2 for flexible version switching.
 - Installed **jq** via `sudo apt install jq -y`.
+
+AWSCLI 
+![](./screenshots/aws%20verison.jpg)
 
 ### 7. Infrastructure & Configuration Management
 - Installed **Terraform** via HashiCorp's official Apt repository.
@@ -82,5 +94,5 @@ The split exists because Docker Desktop integrates with WSL2 as a backend (rathe
 
 1. `README.md` — this file, documenting the setup process and troubleshooting.
 2. `verification-report.txt` — version check output for all installed tools.
-4. Screenshot of `minikube start` and `kubectl get nodes` showing a running local cluster.
+3. Screenshot of `minikube start` and `kubectl get nodes` showing a running local cluster.
 
