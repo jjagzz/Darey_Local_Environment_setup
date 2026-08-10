@@ -40,12 +40,15 @@ The split exists because Docker Desktop integrates with WSL2 as a backend (rathe
 - Installed **Visual Studio Code** via `winget install Microsoft.VisualStudioCode` on the Windows side, then added the **WSL extension** so VS Code can open and edit files directly inside the Ubuntu filesystem.
 
 VSCODE
+
 ![](./screenshots/VScode%20installation.jpg)
 
 GIT
+
 ![](./screenshots/git%20install%20verification.jpg)
 
 GITHUB
+
 ![](./screenshots/GIThub%20setup.jpg)
 
 ### 3. AI-Assisted Tooling (Optional/Advanced)
