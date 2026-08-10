@@ -51,6 +51,9 @@ GITHUB
 
 ![](./screenshots/GIThub%20setup.jpg)
 
+AZURE
+![](./screenshots/AZURE%20install_version.jpg)
+
 ### 3. AI-Assisted Tooling (Optional/Advanced)
 - Explored **GitHub Copilot** as a VS Code extension for AI-assisted code completion within the DevOps workflow.
 
